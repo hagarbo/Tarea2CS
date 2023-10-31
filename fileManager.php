@@ -22,15 +22,14 @@ function showFilesInfo(array $info): string
             $files[$i][$key] = $value[$i];
         }
     }
-
-    $filesInfoHtml = "<div id='file_data'><h3>Estos son los datos de los ficheros</h3>";
+    $load_ok = [];
+    $filesInfoHtml = "";
     for ($i = 0; $i < count($files); $i++) {
-        $filesInfoHtml .= "<p>Ficheiro " . $i + 1 . "</p><ol>";
+        $filesInfoHtml .= "<div class='file-data'><h4>Ficheiro " . $i + 1 . "</h4><ol>";
         foreach ($files[$i] as $key => $value) {
             $filesInfoHtml .= "<li><strong>" . $key . "</strong> : " . $value . "</li>";
         }
-        $filesInfoHtml .= "</ol>";
+        $filesInfoHtml .= "</ol></div>";
     }
-    $filesInfoHtml .= "</div>";
     return $filesInfoHtml;
 }
