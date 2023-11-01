@@ -15,7 +15,7 @@
     <style>
         body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 40px;
+            margin-top: 2em;
             margin-left: 20%;
             margin-right: 20%;
         }
@@ -29,7 +29,7 @@
         .file-data{
             flex-grow: 1;
             width: 500px;
-            padding: 0px 30px 15px 30px;
+            padding: 0 2em 1em 2em;
             border: solid #4169e1;
 	        border-width: 0 2px 2px 0;
         }        
@@ -53,16 +53,30 @@
         form{
             border: 2px solid green;
             border-radius: 5px;
-            padding: 20px 40px 40px 40px;
+            padding: 2em;
         }
         form input{
             font-size: 1.2em;
+        }
+        #upload-info{
+            padding: 0.5em;
         }
         .msg-ok{
             color: green;
         }
         .msg-err{
             color: red;
+        }
+        details {
+            padding: 0.5em 0.5em 0;
+        }
+
+        details[open] {
+            padding: 0.5em;
+        }
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 0.5em;
         }
     </style>
 </head>
